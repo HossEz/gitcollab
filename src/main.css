@@ -3,7 +3,7 @@ body{
     padding-top: 0;
 }
 
-header{
+#container{
     width: 1000px;
     max-width: 100%;
     background-color: white;
