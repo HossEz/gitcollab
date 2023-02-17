@@ -1,21 +1,16 @@
 import './App.css';
-import './main.css'
-import RecipeCard from './components/RecipeCard';
+import './recipes.css';
+import Main from './components/Main';
+import {Route, Routes} from 'react-router-dom'
+import RecipePage from './components/RecipePage';
+import recipes from './resources/recipes';
+
 function App() {
   return (
-    <>
-    <div id='container'>
-    <header>
-      <h1>Penger</h1>
-    </header>
-    <main>
-    <RecipeCard title="Pizza" ingress="Italiensk Pizza"/>
-    </main>
-    <footer>
-
-    </footer>
-    </div>
-    </>
+    <Routes>
+      <Route index element={<Main/>} />
+      <Route path=':slug' element={<RecipePage recipes={recipes}/>} />
+    </Routes>
   );
 }
 
