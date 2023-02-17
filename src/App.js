@@ -1,5 +1,7 @@
 import './App.css';
 import RecipeCard from './components/RecipeCard';
+import './main.css';
+
 function App() {
   return (
     <>
