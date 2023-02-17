@@ -13,3 +13,14 @@ body{
     border-top: none;
 }
 
+.recipe-card{
+    border: solid 1px;
+    background-color: beige;
+    width: 200px;
+}
+
+.recipe-card h3, p{
+    margin-left: 3%;
+}
+
+
