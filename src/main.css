@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: beige;
     padding-top: 0;
 }
 
@@ -7,9 +7,9 @@ header{
     width: 1000px;
     max-width: 100%;
     background-color: white;
-    border: solid 5px;
+    border: solid 1px;
     padding: 1%;
-    margin: 1% 5%;
-    border-radius: 2%;
+    margin-left: 15%;
+    border-top: none;
 }
 
