@@ -10,7 +10,7 @@ export default function Main(){
             </header>
             <main>
                 {recipes.map((recipe) => (
-                    <Link to={recipe.slug}>
+                    <Link className="haha" to={recipe.slug}>
                         <RecipeCard title={recipe.title}/>
                     </Link>
                 ))}

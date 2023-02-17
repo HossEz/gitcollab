@@ -17,7 +17,6 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 1rem;
 }
 
@@ -25,9 +24,19 @@ main > article {
     background-color: #f3f3f3;
 }
 .recipe-card {
-    height: 100px;
+    height: 80px;
     max-width: 300px;
     /* width: 100%; */
     border: 1px solid #969595;
     padding: 1rem;
+  }
+  .haha{
+    text-decoration: none;
+    color: red;
+  }
+  .haha:hover{
+    text-decoration: none;
+    color: blue;
+    scale: 105%;
+    transition: .5s ease-in-out;
   }
