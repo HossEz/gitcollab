@@ -1,3 +1,15 @@
 body{
-    background-color: red;
+    background-color: white;
+    padding-top: 0;
 }
+
+header{
+    width: 1000px;
+    max-width: 100%;
+    background-color: white;
+    border: solid 5px;
+    padding: 1%;
+    margin: 1% 5%;
+    border-radius: 2%;
+}
+
