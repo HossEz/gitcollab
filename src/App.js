@@ -1,4 +1,5 @@
 import './App.css';
+import RecipeCard from './components/RecipeCard';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <h1>Penger</h1>
     </header>
     <main>
-
+    <RecipeCard title="Pizza" ingress="Italiensk Pizza"/>
     </main>
     <footer>
       
