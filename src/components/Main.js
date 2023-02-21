@@ -1,15 +1,23 @@
+import RecipeCard from "./RecipeCard";
+import recipes from "../resources/recipes";
+import { Link } from "react-router-dom";
+
 export default function Main(){
-    return(
+    return (
         <div id='container'>
-        <header>
-          <h1>Penger</h1>
-        </header>
-        <main>
-        <RecipeCard title="Pizza" ingress="Italiensk Pizza"/>
-        </main>
-        <footer>
-    
-        </footer>
+            <header>
+                <h1>Penger</h1>
+            </header>
+            <main>
+                {recipes.map((recipe) => (
+                    <Link className="haha" to={recipe.slug}>
+                        <RecipeCard title={recipe.title}/>
+                    </Link>
+                ))}
+            </main>
+            <footer>
+        
+            </footer>
         </div>
     )
 }
