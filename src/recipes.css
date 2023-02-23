@@ -30,13 +30,17 @@ main > article {
     border: 1px solid #969595;
     padding: 1rem;
   }
-  .haha{
+  .recipes{
     text-decoration: none;
-    color: red;
+    color: green;
   }
-  .haha:hover{
+  .recipes:hover{
     text-decoration: none;
     color: blue;
     scale: 105%;
     transition: .5s ease-in-out;
+  }
+
+  header h1{
+    color: green;
   }

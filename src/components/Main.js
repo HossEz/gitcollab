@@ -1,23 +1,15 @@
 import RecipeCard from "./RecipeCard";
-import recipes from "../resources/recipes";
+// import recipes from "../resources/recipes";
 import { Link } from "react-router-dom";
 
-export default function Main(){
+export default function Main({recipes}){
     return (
-        <div id='container'>
-            <header>
-                <h1>Penger</h1>
-            </header>
-            <main>
-                {recipes.map((recipe) => (
-                    <Link className="haha" to={recipe.slug}>
-                        <RecipeCard title={recipe.title}/>
+        <>
+                {recipes.map((recipe, index) => (
+                    <Link className="recipes" key={index} to={recipe?.recipe?.label.replace(/\s/g, "-").toLowerCase()}>
+                        <RecipeCard title={recipe?.recipe?.label}/>
                     </Link>
                 ))}
-            </main>
-            <footer>
-        
-            </footer>
-        </div>
-    )
+                </>
+    );
 }
