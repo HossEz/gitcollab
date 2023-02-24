@@ -4,7 +4,7 @@ export default function Layout(){
     return(
     <div id='container'>
         <header>
-            <Link to="/">
+            <Link className="pagetitle" to="/">
                 <h1>Matprat</h1>
             </Link>
         </header>
